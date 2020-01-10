@@ -1,0 +1,51 @@
+\documentclass[11pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{\textbf{Vectors and Linear Equations - Answers}}
+\author{Eric Xiao}
+\date{January 11, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall:}
+Sum of two vectors: $[a,b] + [c,d] = [a+c, b+d]$\\
+Scalar multiplication of a vector and scalar: $a[b,c] = [ab, ac]$
+
+\section{Systems of Equations}
+Solve the following systems of equations for $x$ and $y$.
+\begin{enumerate}
+    \itemsep3.0em
+    \item $x + y = 8$ \\ $x = 3y$ \\\\ \fbox{$(x, y) = (6, 2)$}
+    \item $3x + 4y = 0$ \\ $x - 2y = 10$ \\\\ \fbox{$(x, y) = (-4, 3)$}
+    \item $\frac{2}{3}x - \frac{1}{9}y = 4$ \\ $\frac{x}{y} = 2$ \\\\ \fbox{$(x, y) = (\frac{72}{11}, \frac{36}{11})$}
+    \item $y = x + 1$ \\ $x^2 + y^2 = 5$ \\\\ \fbox{$(x, y) = (1, 2), (-2, -1)$}
+\end{enumerate}
+
+\section{Homogeneous Linear Equations}
+Describe all rational solutions using vectors to the following homogeneous linear equations.\\
+For your final answer in the form $q[x, y]$, reduce $x$ and $y$ to lowest terms or convert them both to integers if possible. The order of the negatives does not matter.
+\begin{enumerate}
+    \itemsep2.5em
+    \item $x + 2y = 0$ \fbox{$[x, y] = q[-2, 1]$} or \fbox{$q[2, -1]$}
+    \item $5x - 10y + 4 = 4$ \fbox{$[x, y] = q[2, 1]$}
+    \item $\frac{1}{3}x + \frac{1}{12}y = 0$ \fbox{$[x, y] = q[-1, 4]$} or \fbox{$q[1, -4]$}
+    \item $\sqrt{2}x + 7y - \sqrt{3} = -\sqrt{3}$ \fbox{$[x, y] = q[-7, \sqrt{2}]$} or \fbox{$q[7, -\sqrt{2}]$}
+\end{enumerate}
+
+\section{Word Problems}
+\begin{enumerate}
+    \itemsep2.5em
+    \item What is the sum of the two vectors $[3, 8]$ and $[75, 200]$? \\ $[3, 8] + [75, 200]$ = $[3 + 75, 8 + 200]$ = \fbox{$[78, 208]$}
+    \item What is the simplified scalar multiplication of the vector $\sqrt{2}[14, 28\sqrt{2}]$? \\ $\sqrt{2}[14, 28\sqrt{2}]$ = $[14 * \sqrt{2}, 28\sqrt{2} * \sqrt{2}]$ = \fbox{$[14\sqrt{2}, 56]$}
+    \item All vectors $[x,y]$ = $q[51, -68]$ are solutions to the homogeneous equation $ax + by = 0$, where $a$ and $b$ are in lowest terms. Find the value of $3a + 2b$. \\ $(a, b) = (4, 3)$ \\ $3a + 2b$ = $3(4) + 2(3)$ = $12 + 6$ = \fbox{18}
+\end{enumerate}
+\end{document}
