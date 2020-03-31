@@ -1,0 +1,54 @@
+\documentclass[11pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{Combinatorics I}
+\author{Eric Xiao}
+\date{March 28, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall}
+\large{Order matters in permutations and doesn't matter in combinations.\\}
+\large{$n!$ = 1 x 2 x 3 x ... x ($n$ - 2) x ($n$ - 1) x $n$\\}
+\large{$\binom{n}{k}$ = $\frac{n!}{k!(n - k)!}$}
+
+\section{Permutations}
+{I have a red, orange, yellow, green, blue, and purple pencil crayon.}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {If I can only put all 6 crayons back one-by-one in their container, how many different ways are there?}
+    \item {What if I must put the red pencil crayon right after the green crayon? How many ways are there now?}
+\end{enumerate}
+
+\section{Combinations}
+{Five athletes (Alice, Bob, Carl, David, Earl) participate in their school's soccer team tryouts. Only three of them can get selected for the team.}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {How many possible selections are there?}
+    \item {What if David is a soccer prodigy and must be selected? How many possibilities are there now?}
+\end{enumerate}
+
+\bigskip
+
+\section{Mixed Questions}
+\begin{enumerate}
+    \itemsep 3.5em
+    \item {I have a 4-digit lock where the digits range from 0 to 9. How many different passwords can I make?}
+    \item {I have 4 different t-shirts, 3 different pairs of jeans, and 2 different pairs of shoes in my closet. If I can only wear exactly two t-shirts (don't ask why), one pair of jeans, and one pair of shoes for today, how many different outfit \textbf{combinations} are there?}
+    \item {Out of a deck of 54 cards, how many ways are there to choose 4 of them for your hand? Write the answer as a product of 4 numbers.}
+    \item {Ten competitors participated in an eSports (video game) competition. There are prizes for only first-place, second-place, third-place, fourth-place, and fifth-place. How many ways can I select these five winners?}
+    \item {Around a circular table, 8 employees sit for a meeting (I lost my ability to make names, so you can make up all of their names). Three of these employees must sit beside each other. How many seating arrangements are there?}
+\end{enumerate}
+
+\end{document}
