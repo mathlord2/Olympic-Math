@@ -1,0 +1,47 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{Combinatorics II - Answers}
+\author{Eric Xiao}
+\date{April 4, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall:}
+\begin{itemize}
+    \itemsep 1.0em
+    \item {$\binom{n}{k}$ = $\binom{n}{n-k}$}
+    \item {Binomial Coefficients:\\$\binom{n}{k}$ + $\binom{n}{k+1}$ = $\binom{n+1}{k+1}$}
+    \item {Hockey-Stick Identity (diagonally-down right to left):\\$\displaystyle\sum_{k=r}^{n}$ $\binom{k}{r}$ = $\binom{r}{r}$ + $\binom{r+1}{r}$ + ... + $\binom{n}{r}$ = $\binom{n+1}{r+1}$}
+    \item {Hockey-Stick Identity (diagonally-down left to right):\\$\displaystyle\sum_{k=0}^{a}$ $\binom{n+k}{k}$ = $\binom{n}{0}$ + $\binom{n+1}{1}$ + ... + $\binom{n+a}{a}$ = $\binom{n+a+1}{a}$}
+    \item {Number of ways to group n objects into k groups: $\binom{n+k-1}{n}$ = $\binom{n+k-1}{k=1}$}
+\end{itemize}
+
+\section{Pascal's Triangle}
+\begin{enumerate}
+    \itemsep 1.5em
+    \item {How many ways are there to choose 20 cards from a deck of 54 cards for your own hand? Express the answer twice using two different $\binom{n}{k}$ formats. \\Answer: \fbox{$\binom{54}{20}$ and $\binom{54}{34}$}}
+    \item {What is the sum of $\binom{4}{2}$, $\binom{4}{3}$, and $\binom{5}{4}$? \\Answer: \fbox{$\binom{6}{4}$ = 15}}
+    \item {On an 8 by 8 checkerboard, how many ways are there to choose 3 squares such that they all lie on the same diagonal? \\Answer: \fbox{4 x $\binom{8}{4}$ + 2 x $\binom{8}{3}$ = 392}}
+\end{enumerate}
+
+\section{Stars and Bars}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {Suppose that $v$ + $w$ + $x$ + $y$ + $z$ = 20 and each of these variables are whole numbers. How many different sets of ($v$, $w$, $x$, $y$, $z$) are there? \\Answer: \fbox{$\binom{24}{20}$ or $\binom{24}{4}$ = 10626}}
+    \item {Find the number of non-negative integer solutions to $3x$ + $y$ + $z$ = 24. \\Answer: \fbox{$\binom{25}{1}$ + $\binom{22}{1}$ + $\binom{19}{1}$ + $\binom{16}{1}$ + $\binom{13}{1}$ + $\binom{10}{1}$ + $\binom{7}{1}$ + $\binom{4}{1}$ + $\binom{1}{1}$= 117}}
+    \item {How many different 5-letter words are there from the 26-letter alphabet, assuming that anagrams (words with the same composition of letters but in different orders) are the same? \\Answer: \fbox{$\binom{30}{5}$ or $\binom{30}{25}$ = 142506}}
+\end{enumerate}
+
+\end{document}
