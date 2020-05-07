@@ -1,0 +1,66 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usepackage{textcomp}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{Complex Numbers}
+\author{Eric Xiao}
+\date{May 9, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall}
+\begin{itemize}
+    \item {$i = \sqrt{-1}$ and $i^2 = -1$}
+    \item {$(a+bi) + (c+di) = (a+c) + (b+d)i$}
+    \item {$(a+bi)(c+di) = ac + adi + bci + bdi^2 = (ac-bd) + (ad+bc)i$}
+    \item {$|a+bi| = \sqrt{a^2+b^2}$}
+\end{itemize}
+
+\section{Problems}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {Express the following in terms of $i$:
+        \begin{enumerate}
+            \itemsep 1.0em
+            \item {$\sqrt{-100}$} %\\Answer: \fbox{$10i$}
+            \item {$\sqrt{-57}$} %\\Answer: \fbox{$\sqrt{57}i$}
+            \item {$\sqrt{2-10}$} %\\Answer: \fbox{$\sqrt{8}i$} or \fbox{$2\sqrt{2}i$}
+            \item {-14} %\\Answer: \fbox{$14i^2$}
+        \end{enumerate}
+    }
+    \item {Simplify the following expressions:
+        \begin{enumerate}
+            \itemsep 1.0em
+            \item {$2i - (10 - 5i)$} %\\Answer: \fbox{$-10 + 7i$}
+            \item {$10i^2 - 19$} %\\Answer: \fbox{-29}
+            \item {$(2+8i)(i+3i^2)$} %\\Answer: \fbox{$-14 - 22i$}
+            \item {$(3-2i)^2$} %\\Answer: \fbox{$5 - 12i$}
+        \end{enumerate}
+    }
+    \item {Evaluate the following absolute values:
+        \begin{enumerate}
+            \itemsep 1.0em
+            \item {$|6-8i|$} %\\Answer: \fbox{10}
+            \item {$|4i^2+12i-1|$} %\\Answer: \fbox{$13$}
+            \item {$|148i^3|$} %\\Answer: \fbox{148}
+            \item {$|i^3-7i^2+11i-9|$} %\\Answer: \fbox{$\sqrt{104}$}
+        \end{enumerate}
+    }
+    \item {Find the solutions to the equation $x^2 + 25 = 0$.} %\\Answer: \fbox{$-5i, 5i$}
+    \item {The function $f(x) = ax^2+bx+c$ has real-number coefficients and $f(5+3i) = 0$. Find the value of $a-b-c$.} %\\Answer: \fbox{-23}
+    \item {There is a complex number $z$ with imaginary part $164$ and a positive integer $n$ such that $\frac{z}{z + n} = 4i$. Find $n$.} %\\Answer: \fbox{697}
+\end{enumerate}
+
+\end{document}
