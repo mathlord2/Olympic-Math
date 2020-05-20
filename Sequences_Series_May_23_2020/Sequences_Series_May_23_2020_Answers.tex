@@ -1,0 +1,60 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usepackage{textcomp}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{Sequences and Series - Answers}
+\author{Eric Xiao}
+\date{May 23, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall}
+\begin{itemize}
+    \item {The general term/explicit formula is a formula used to determine a specific term without knowledge of previous terms.}
+    \item {The recursive formula is a formula used to determine a specific term that requires knowledge of previous terms.}
+    \item {General term for an arithmetic sequence: $a_n = a + (n - 1)d$}
+    \item {General term for a geometric sequence: $a_n = ar^{n-1}$}
+    \item {Arithmetic series: $S_n = \frac{n}{2}[2a + (n - 1)d]$}
+    \item {Geometric series: $S_n = \frac{a(r^n - 1)}{r - 1}$}
+\end{itemize}
+
+\section{Problems}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {Find the general term for the following sequences:
+        \begin{enumerate}
+            \itemsep 1.0em
+            \item {15, 17, 19, 21, 23, ... \\Answer: \fbox{$a_n = 2n + 13$}}
+            \item {1, 2, 4, 8, 16, ... \\Answer: \fbox{$a_n = 2^{n-1}$}}
+            \item {1, -1, 1, -1, 1, ... \\Answer: \fbox{$a_n = (-1)^{n - k}$} where k can be any odd number}
+            \item {7, 26, 63, 124, 215, ... \\Answer: \fbox{$a_n = (n + 1)^3 - 1$}}
+        \end{enumerate}
+    }
+    \item {What is the recursive formula for the Fibonacci sequence? Assume that the first term is 0 and the second term is 1. \\Answer: \fbox{$a_1 = 0; a_2 = 1; a_n = a_{n-2} + a_{n-1}$}}
+    \item {In an arithmetic sequence, the second term is 20 and the seventh term is 50. Find its general term. \\Answer: \fbox{$a_n = 14 + (n-1)6 = 6n + 8$}}
+    \item {Elaine buys a Tesla Cybertruck, whose value deprecates by 50\% every year. If the value of the Cybertruck in 5 years is \$5000, how much did Elaine pay for it? \\Answer: \fbox{\$160,000}}
+    \item {What is the sum of all the multiples of 8 and powers of 3 between 0 and 200, inclusive? \\Answer: \fbox{2721}}
+    \item {A sequence is given such that $t_1 = 1$ and $t_{n+1} = t_n + 3n^2 + 3n + 1$. Evaluate $t_{100}$. \\Answer: \fbox{$1000000$}}
+    \item {The problem below is Question B2 on the 2020 Canadian Senior Math Contest.
+        \begin{enumerate}
+            \itemsep 2.0em
+            \item {Determine a real number $w$ for which $\frac{1}{w}$, $\frac{1}{2}$, $\frac{1}{3}$, $\frac{1}{6}$ is an arithmetic sequence. \\Answer: \fbox{$\frac{3}{2}$}}
+            \item {Suppose $y$, 1, $z$ is a geometric sequence with $y$ and $z$ both positive. Determine all real numbers $x$ for which $\frac{1}{y + 1}$, $x$, $\frac{1}{z + 1}$ is an arithmetic sequence for all such $y$ and $z$. \\Answer: \fbox{$\frac{1}{2}$}}
+            \item {Suppose that $a$, $b$, $c$, $d$ is a geometric sequence and $\frac{1}{a}$, $\frac{1}{b}$, $\frac{1}{d}$ is an arithmetic sequence with each of $a$, $b$, $c$, and $d$ positive and a $\neq$ b. Determine all possible values of $\frac{b}{a}$. \\Answer: \fbox{$\frac{1+\sqrt{5}}{2}$}}
+        \end{enumerate}
+    }
+\end{enumerate}
+
+\end{document}
