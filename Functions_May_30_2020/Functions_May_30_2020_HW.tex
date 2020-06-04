@@ -1,0 +1,97 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{Functions}
+\author{Eric Xiao}
+\date{May 30, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall}
+\begin{itemize}
+    \item {Functions have notation $f(x)$, where $f$ is the function name and $x$ is the input.}
+    \item {For each input that a function can take, it must return only one output.}
+    \item {Domain is the set of inputs that a function can take, and range is the set of possible outputs.}
+    \item {Composite functions take functions as input. e.g.: $g(f(x))$}
+    \item {Inverse functions take the output of the original function as input and return the original input. e.g.: $f(x) = y, f^{-1}(y) = x$}
+    \item {Recursion is the defining of a function using itself. e.g.: $f(x) = f(x-1) + 1$}
+\end{itemize}
+
+\section{Domain and Range}
+{Find the domain and range of the following functions:}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {$f(x) = x - 5$} %\\Answer: \fbox{$D_f = $\{$x \in \R$\}} \fbox{$R_f = $\{$y \in \R$\}}
+    \item {$g(x) = 4x^2 - 5$} %\\Answer: \fbox{$D_g = $\{$x \in \R$\}} \fbox{$R_g = $\{$y|y \geq -5, y \in \R$\}}
+    \item {$h(x) = \sqrt{-5x + 9}$} %\\Answer: \fbox{$D_h = $\{$x|x \leq \frac{9}{5}, x \in \R$\}} \fbox{$R_h = $\{$y|y \geq 0, y \in \R$\}}
+    \item {$f(x) = \frac{2}{x - 3} + 1$} %\\Answer: \fbox{$D_f = $\{$x|x \neq 3, x \in \R$\}} \fbox{$R_f = $\{$y|y \neq 1, y \in \R$\}}
+\end{enumerate}
+
+\section{Conjugate Functions}
+{Simplify each of the following conjugate functions:}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {$g(f(x))$ if $f(x) = 3x$ and $g(x) = x^2 - x + 2$} %\\Answer: \fbox{$9x^2 - 3x + 2$}
+    \item {$f(g(x))$ if $f(x) = \sqrt{x}$ and $g(x) = 4x - 8$} %\\Answer: \fbox{$\sqrt{4x - 8} = 2\sqrt{x - 2}$}
+    \item {$a(b(x))$ if $a(x) = \frac{4}{3x}$ and $b(x) = \frac{2}{x}$} %\\Answer: \fbox{$\frac{2}{3}x$}
+\end{enumerate}
+
+\section{Inverse Functions}
+{Find the inverse for each of the following functions:}
+\begin{enumerate}
+    \itemsep 2.0em
+    \item {$f(x) = 10x - 5$} %\\Answer: \fbox{$f^{-1}(x) = \frac{1}{10}x + \frac{1}{2}$}
+    \item {$h(x) = x^2 - 6x + 9$} %\\Answer: \fbox{Inverse of h = $\pm \sqrt{x} + 3$}
+    \item {$g(x) = \frac{x + 1}{x - 1}$} %\\Answer: \fbox{$g^{-1}(x) = \frac{x + 1}{x - 1}$}
+\end{enumerate}
+
+\section{More Problems}
+\begin{enumerate}
+    \itemsep 3.5em
+    \item {Find the domain and range of the conjugate function $h(g(x))$ where $g(x) = \frac{1}{x}$ and $h(x) = \frac{x + 2}{x - 1}$.} %\\Answer: \fbox{$D_{h o g} = $\{$x|x \neq 1, x \in \R$\}} \fbox{$R_{h o g} = $\{$y|y \neq -2, y \in \R$\}}
+    \item {Is the inverse of $f(x) = \sqrt{2x - 3} + 1$ a function? What is its domain and range?} %\\Answer: \fbox{Is a function} \fbox{$D_{f^{-1}} = $\{$x|x \geq 1, x \in \R$\}} \fbox{$R_{f^{-1}} = $\{$y|y \geq \frac{3}{2}, y \in \R$\}}
+    \item {A function $f(x)$ is defined such that $f(1) = -4$ and $f(2x+1) = \frac{1}{2} f(x)$. Find the value of $f(1023)$.} %\\Answer: \fbox{$-\frac{1}{128}$}
+    \item {\textbf{Question C1 from the 2019 Canadian Open Mathematics Challenge:} The function $f$ is defined on the natural numbers 1, 2, 3, . . . by $f(1) = 1$ and
+    \[
+        f(n)= 
+        \begin{cases}
+            {f(\frac{n}{10})& \text{if $10 | n$,}}\\
+            {f(n-1) + 1     & \text{otherwise.}}
+        \end{cases}
+    \]
+    
+    Note: The notation $b | a$ means integer number $a$ is divisible by integer number $b$.
+        \begin{enumerate}
+            \itemsep 3.0em
+            \item {Calculate $f(2019)$.} %\\Answer: \fbox{12}
+            \item {Determine the maximum value of $f(n)$ for $n \leq 2019$.} %\\Answer: \fbox{28}
+            \item { A new function $g$ is defined by $g(1) = 1$ and
+            \[
+                g(n)= 
+                \begin{cases}
+                    g(\frac{n}{3})& \text{if $3 | n$,}\\
+                    g(n-1) + 1    & \text{otherwise.}
+                \end{cases}
+            \]
+            
+            
+            Determine the maximum value of $g(n)$ for $n \leq 100$.} %\\Answer: \fbox{8}
+        \end{enumerate}
+    }
+\end{enumerate}
+\end{document}

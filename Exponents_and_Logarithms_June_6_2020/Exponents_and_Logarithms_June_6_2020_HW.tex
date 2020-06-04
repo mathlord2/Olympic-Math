@@ -1,0 +1,65 @@
+\documentclass[12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-1.0in}
+
+\title{Exponents and Logarithms}
+\author{Eric Xiao}
+\date{June 6, 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Recall}
+\begin{itemize}
+    \item {$log_a a = 1$}
+    \item {$log_a 1 = 0$}
+    \item {$log_a a^x = a^{log_a x} = x$}
+    \item {$log_a (mn) = log_a m + log_a n$}
+    \item {$log_a (\frac{m}{n}) = log_a m - log_a n$}
+    \item {$log_a m^n = nlog_a m$}
+    \item {$log_a n = \frac{log_m n}{log_m a}$}
+\end{itemize}
+
+\section{Exponents}
+{Solve the following problems without using logarithms:}
+\begin{enumerate}
+    \itemsep 1.5em
+    \item {$4^{x-1} = 64$} %\\Answer: \fbox{$x = 4$}
+    \item {$\frac{6^{4x}}{6^{2x}} = 216$} %\\Answer: \fbox{$x = \frac{3}{2}$}
+    \item {$5^a - 5^{a+2} = -600$} %\\Answer: \fbox{$a = 2$}
+    \item {$2^{2z} - 8(2^z) + 16 = 0$} %\\Answer: \fbox{$z = 2$}
+\end{enumerate}
+
+\section{Logarithms}
+{Evaluate the following expressions:}
+\begin{enumerate}
+    \itemsep 1.5em
+    \item {$2log1$} %\\Answer: \fbox{0}
+    \item {$4^{log_4 3}$} %\\Answer: \fbox{3}
+    \item {$log_3 (\frac{27}{243})$} %\\Answer: \fbox{-2}
+    \item {$4log_{12} 9 + 8log_{12} 4$} %\\Answer: \fbox{8}
+    \item {$log_{32} 128$} %\\Answer: \fbox{$\frac{7}{5}$}
+\end{enumerate}
+
+\section{More Problems}
+\begin{enumerate}
+    \itemsep 2.5em
+    \item {Solve the following equation: $log_4 (4x) = log_4 (x - 1) + 2.$} %\\Answer: \fbox{$x = \frac{4}{3}$}
+    \item {If $f(x) = 2^{4x-2}$, calculate, in simplest form, $f(x)$ · $f(1 - x)$.} %\\Answer: \fbox{1}
+    \item {Determine the point(s) of intersection of $y = log(x - 2)$ and $y = 1 - log(x + 1)$.} %\\Answer (only one point): \fbox{$(4, log2)$} or \fbox{$(4, 1 - log5)$}
+    \item {If $log_8 3 = k$, express $log_8 18$ in terms of k.} %\\Answer: \fbox{$k + log_8 6$}
+\end{enumerate}
+\end{document}
